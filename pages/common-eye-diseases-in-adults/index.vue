@@ -17,7 +17,7 @@ useHead(() => ({
   ],
 }));
 const bannerImg = {
-  pc: "https://statichk.cmermedical.com/vision/imgs/683dce2cd87bd6bf.png",
+  pc: "https:///statichk.cmermedical.com/cmermedical/image/20260302/683dce2cd87bd6bf.webp",
   mobile: "https://statichk.cmermedical.com/vision/imgs/c88934386018c7c0.png",
 };
 let imgLeft = ref("50%");
@@ -85,7 +85,7 @@ const judgeTwo = (num: string) => {
 
 <template>
   <div class="video-information">
-    <PublicBanner :banner="bannerImg" />
+    <PublicContainBanner :banner="bannerImg" />
     <PublicNavbar
       :name="'常見眼睛問題'"
       :isInsidePage="true"

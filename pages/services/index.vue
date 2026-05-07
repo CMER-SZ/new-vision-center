@@ -17,8 +17,8 @@ useHead(() => ({
   ],
 }));
 const bannerImg = {
-  pc: "https://statichk.cmermedical.com/vision/imgs/a77ea39669a22178.jpg",
-  mobile: "https://statichk.cmermedical.com/vision/imgs/fef8b7c8cf8e4a01.jpg",
+  pc: "https://statichk.cmermedical.com/cmermedical/image/20260122/06.webp",
+  mobile: "https://statichk.cmermedical.com/cmermedical/image/20260122/07.webp",
 };
 
 import getWindowSize from "@/utils/width";
@@ -84,10 +84,10 @@ const listData = ref([
     img: "https://statichk.cmermedical.com/vision/imgs/4daa5583f7e6d55d.png",
     title: ["眼球結構斷", "層掃描(OCT）"],
   },
-  {
-    img: "https://statichk.cmermedical.com/vision/imgs/50c50cb8b98c.png",
-    title: ["人工智能眼底健", "康篩查服務"],
-  },
+  // {
+  //   img: "https://statichk.cmermedical.com/vision/imgs/50c50cb8b98c.png",
+  //   title: ["人工智能眼底健", "康篩查服務"],
+  // },
 ]);
 const listDataDetail = [
   {
@@ -312,7 +312,7 @@ const listDataDetail = [
 
 <template>
   <div class="video-information">
-    <PublicBanner :banner="bannerImg" />
+    <PublicContainBanner :banner="bannerImg" />
     <PublicNavbar
       :name="'專業服務'"
       :isInsidePage="true"

@@ -40,19 +40,19 @@ const wearOrExcise = (str: string) => {
 };
 
 
-const bannerImg = [
+const bannerImg = 
+  // {
+  //   pc: "https://content.cmervision.com//static/upload/other/20250624/1750736315458326.webp",
+  //   mobile:
+  //     "https://content.cmervision.com//static/upload/other/20250624/1750736320936413.webp",
+  //   newBanner: true,
+  // },
   {
-    pc: "https://content.cmervision.com//static/upload/other/20250624/1750736315458326.webp",
-    mobile:
-      "https://content.cmervision.com//static/upload/other/20250624/1750736320936413.webp",
+    pc: "https://statichk.cmermedical.com/cmermedical/image/20260122/20.webp",
+    mobile: "https://statichk.cmermedical.com/cmermedical/image/20260122/21.webp",
     newBanner: true,
-  },
-  {
-    pc: "https://statichk.cmermedical.com/vision/imgs/2024123008462701.png",
-    mobile: "https://statichk.cmermedical.com/vision/imgs/2024123008462702.png",
-    newBanner: true,
-  },
-];
+  }
+
 const okQuestionList = [
   {
     q: "日常如何護理OK鏡片？",
@@ -151,7 +151,8 @@ const handlesSliPrev = () => {
 <template>
   <div class="orthokeratoplasty">
     <!-- <PublicBanner :banner="bannerImg"> </PublicBanner> -->
-    <PageSwiperBanner :banner="bannerImg" class="banner" />
+    <!-- <PageSwiperBanner :banner="bannerImg" class="banner" /> -->
+         <PublicContainBanner :banner="bannerImg"> </PublicContainBanner>
     <PublicNavbar
       :isInsidePage="true"
       :insidePageTitle="isPc ? '角膜矯形術評估' : '角膜矯形術 OK鏡'"
@@ -3809,7 +3810,7 @@ const handlesSliPrev = () => {
     max-width: 960px;
     margin: 80px auto 0;
     & > div:nth-child(1) {
-      background: url(https://statichk.cmermedical.com/vision/imgs/41500a3b6e4b4618.jpg)
+      background: url(https://statichk.cmermedical.com/cmermedical/image/20260122/22.webp)
         no-repeat;
       background-size: 100% 100%;
       height: 370px;
@@ -5183,7 +5184,7 @@ const handlesSliPrev = () => {
     align-items: center;
     & > div:nth-child(1) {
       position: relative;
-      background: url("https://statichk.cmermedical.com/vision/imgs/009abe3faad51822.jpg")
+      background: url("https://statichk.cmermedical.com/cmermedical/image/20260122/23.webp")
         no-repeat;
       background-size: 100% 100%;
       width: 340px;

@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import ContainBannerV2 from "./components/ContainBanner/Index.vue";
 useHead({
   title: "ZEISS VISION EXPERT｜希瑪視光中心",
   meta: [
@@ -103,8 +104,8 @@ const bannerImg = {
   // pc: "https://content.cmervision.com//static/upload/image/20241224/1735001362999905.png",
   // mobile:
   //   "https://content.cmervision.com//static/upload/image/20241224/1735001367776208.png",
-  pc: "https://statichk.cmermedical.com/vision/imgs/2025012115033203.png",
-  mobile: "https://statichk.cmermedical.com/vision/imgs/2025012115033202.png",
+  pc: "https:///statichk.cmermedical.com/cmermedical/image/20260302/2025012115033203.webp",
+  mobile: "https:///statichk.cmermedical.com/cmermedical/image/20260302/2025012115033202.webp",
   newBanner: true,
 };
 
@@ -349,7 +350,8 @@ const close = () => {
 
 <template>
   <div class="zve-information">
-    <PublicBanner :banner="bannerImg">
+    
+    <ContainBannerV2  :banner="bannerImg">
       <!-- 插槽 -->
       <template #title>
         <div class="zveTitle">
@@ -360,7 +362,7 @@ const close = () => {
           >
         </div>
       </template>
-    </PublicBanner>
+    </ContainBannerV2>
     <!-- <img
       class="zveImg"
       src="https://statichk.cmermedical.com/vision/imgs/98a021b3329ea1b1.png"
@@ -1867,16 +1869,14 @@ const close = () => {
 
   //顶部banner标题
 
-  // :deep(.publicBanner){
-  //   position: static !important;
-  //   top: 0;
-  //   right: none;
-  //   transform: translate(0, 0);
-  // }
+  
+   
   .zveTitle {
+    position: relative;
+    top: 0%;
+    left: 0%;
     h2 {
-      position: relative;
-      left: -60%;
+     
       color: #fff;
       font-family: "Noto Sans";
       font-size: calc(1.5rem + 1vw);
@@ -1887,8 +1887,7 @@ const close = () => {
     }
     span {
       margin-top: 20px;
-      position: relative;
-      left: -60%;
+     
       display: block;
       width: clamp(36.75rem, 4vw, 36rem);
       flex-shrink: 0;
@@ -1899,7 +1898,7 @@ const close = () => {
 
       font-style: normal;
       font-weight: 500;
-      line-height: 3.125rem; /* 200% */
+      line-height: 2.125rem; /* 200% */
       letter-spacing: 0.375rem;
     }
   }
@@ -2377,10 +2376,10 @@ const close = () => {
   .zveTitle {
     h2 {
       position: relative;
-      left: -60%;
+      left: 0%;
       color: #fff;
       font-family: "Noto Sans";
-      font-size: calc(3rem + 1vw);
+      font-size: calc(1rem + 1vw);
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -2389,18 +2388,18 @@ const close = () => {
     span {
       margin-top: 40px;
       position: relative;
-      left: -60%;
+      left: 0%;
       display: block;
-      max-width: 905px !important;
+      max-width: 700px !important;
       width: 100%;
       flex-shrink: 0;
       color: #fff;
       // text-align: justify;
       font-family: "Noto Sans";
-      font-size: calc(0.7rem + 1vw);
+      font-size: calc(0.2rem + 1vw);
       font-style: normal;
       font-weight: 500;
-      line-height: 5.125rem;
+      line-height: 3.125rem;
       letter-spacing: 0.4rem;
     }
   }

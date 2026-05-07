@@ -17,7 +17,7 @@ const isPc = ref(true);
 // 获取轮播图
 const getImgSwiper = async () => {
   const res = await fetch(
-    "https://content.cmervision.com/api.php/cms/slide/gid/1"
+    "https://content.cmervision.com/api.php/cms/slide/gid/1/num/30"
   );
   const data = await res.json();
   if (data.code === 1) {
@@ -65,7 +65,9 @@ const handleshowdeBox = (_idx: any) => {
   <div class="home_banner">
     <div class="banner_size" v-if="winWSize > 768">
       <swiper
+        :slidesPerView="'auto'"
         :spaceBetween="30"
+        :loop="true"
         :centeredSlides="true"
         :autoplay="{
           delay: 2500,
@@ -75,9 +77,10 @@ const handleshowdeBox = (_idx: any) => {
           clickable: true,
         }"
         :navigation="true"
-        :modules="[Autoplay, Pagination, Navigation]"
+       :modules="[Autoplay, Pagination, Navigation]"
         @swiper="swiperBox"
       >
+       <!--  -->
         <swiper-slide v-for="banner in bannerImg" :key="banner.id">
           <nuxt-link :to="banner.link">
             <img :src="banner.img" />
@@ -117,7 +120,7 @@ const handleshowdeBox = (_idx: any) => {
   .home_banner {
     position: relative;
     .banner_size {
-      max-width: 1735px;
+      // max-width: 1735px;
       max-height: 800px;
       width: 100%;
       height: 100%;
@@ -288,12 +291,15 @@ const handleshowdeBox = (_idx: any) => {
   .home_banner {
     position: relative;
     .banner_size {
-      max-width: 1735px;
+      // max-width: 1735px;
       max-height: 800px;
       width: 100vw;
       margin: 130px auto 0;
       object-fit: cover;
       object-position: center;
+      .swiper-slide{
+        width: 60vw;
+      }
 
       a {
         width: 100%;

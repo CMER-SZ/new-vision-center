@@ -53,9 +53,21 @@ const menuList = ref([
   },
   {
     id: "9",
-    title: "ZEISS Vision Expert",
+    title: "ZEISS VISION EXPERT",
     child: "svg",
     path: "/zve",
+    //  childrenList: [
+      // {
+      //   id: "1",
+      //   title: "ZEISS VISION EXPERT",
+      //   path: "/zve",
+      // },
+      //  {
+      //   id: "2",
+      //   title: "駕輛 Upcar",
+      //   path: "/upcar-campaign",
+      // },
+    // ]
   },
   {
     id: "2",
@@ -102,12 +114,22 @@ const menuList = ref([
             title: "MiSight®1 Day 隱形眼鏡",
             path: "/misight",
           },
+          {
+            id: "2",
+            title: "Abiliti™ 1 day 隱形眼鏡",
+            path: "/Acuvue-abiliti-1-day",
+          },
         ],
       },
       {
         id: "5",
         title: "眼睛檢查",
         path: "/comprehensive/comprehensive-eye-examination/comprehensive-eye-examination-for-child",
+      },
+      {
+        id: "6",
+        title: "蔡司近視防控中心",
+        path: "/zeiss-myopia-management-workplace",
       },
     ],
   },
@@ -117,6 +139,11 @@ const menuList = ref([
     isChildVisible: false,
     path: "/",
     childrenList: [
+       {
+        id: "0",
+        title: "眼鏡品牌",
+        path: "/glasses",
+      },
       {
         id: "1",
         title: "眼睛檢查",
@@ -137,6 +164,7 @@ const menuList = ref([
         title: "硬性隱形眼鏡",
         path: "/comprehensive/contact-lens-fitting/rgp",
       },
+      
     ],
   },
   {
@@ -301,11 +329,12 @@ const hiddenBox = ref(false);
         class="fa-path"
         :class="[
           `fa-${index + 1}`,
-          item.childrenList && item.childrenList.length > 0
+          item?.childrenList && item.childrenList.length > 0
             ? 'isChildNode'
             : 'noNodeChild',
         ]"
       >
+     
         <nuxt-link
           :to="
             item.path == '/' ? (headLink(index, item), undefined) : item.path
@@ -661,7 +690,7 @@ const hiddenBox = ref(false);
       position: absolute;
       box-shadow: #4d4d4d 5px 5px 10px;
       width: max-content;
-      background: #00B9E6;
+      background: #00b9e6;
       right: -86%;
       top: -68%;
       border-radius: 5px;
@@ -690,7 +719,7 @@ const hiddenBox = ref(false);
       }
       & > div:hover {
         & > a {
-          background: #00A6CE;
+          background: #00a6ce;
           position: relative;
           color: #fff;
           & > span::before {
@@ -804,8 +833,8 @@ const hiddenBox = ref(false);
     color: #00a6ce !important;
   }
   .menu {
-    .fa-2,
-    .fa-3 {
+    .fa-2
+     {
       cursor: pointer;
       & > a::after {
         content: none;
@@ -1397,8 +1426,13 @@ const hiddenBox = ref(false);
     }
   }
   .menu {
-    .fa-2,
-    .fa-3 {
+    .fa-2{
+      cursor: pointer;
+      & > a::after {
+        content: none;
+      }
+    }
+    .fa-3{
       cursor: pointer;
       & > a::after {
         content: none;
@@ -1509,6 +1543,7 @@ const hiddenBox = ref(false);
     & > div:nth-child(2) {
       display: none;
     }
+    
   }
   .search {
     max-width: 9.895vw;

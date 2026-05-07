@@ -77,6 +77,11 @@ const menuList = ref([
             title: "MiSight® 1 day隱形眼鏡",
             path: "/misight",
           },
+              {
+            id: "2",
+            title: "Abiliti™ 1 day 隱形眼鏡",
+            path: "/Acuvue-abiliti-1-day",
+          },
         ],
       },
       {
@@ -84,6 +89,7 @@ const menuList = ref([
         title: "眼睛檢查",
         path: "/comprehensive/comprehensive-eye-examination/comprehensive-eye-examination-for-child",
       },
+
     ],
   },
   {

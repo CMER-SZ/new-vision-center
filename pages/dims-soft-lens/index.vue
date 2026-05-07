@@ -28,16 +28,34 @@ onMounted(() => {
 const bannerImg = [
   // pc: "https://statichk.cmermedical.com/vision/imgs/6446d8c5f0f8f72a.png",
   // mobile: "https://statichk.cmermedical.com/vision/imgs/5e82a28589934353.png",
-    {
-    pc: "https://statichk.cmermedical.com/vision/imgs/55555555555544.avif",
-    mobile:
-      "https://statichk.cmermedical.com/vision/imgs/5555555555666.avif",
-          newBanner: true,
-  },
+  //   {
+  //   pc: "https://statichk.cmermedical.com/vision/imgs/55555555555544.avif",
+  //   mobile:
+  //     "https://statichk.cmermedical.com/vision/imgs/5555555555666.avif",
+  //         newBanner: true,
+  // },
+  //  {
+  //   pc: "https://content.cmervision.com/static/upload/other/20260113/1768283094237395.webp",
+  //   mobile:
+  //     "https://content.cmervision.com/static/upload/other/20260113/1768283133922698.webp",
+  //         newBanner: true,
+  // },
+  //  {
+  //   pc: "https://content.cmervision.com//static/upload/other/20260113/1768283288426406.webp",
+  //   mobile: "https://content.cmervision.com//static/upload/other/20260113/1768283297742226.webp",
+  //   newBanner: true,
+   
+  // },
+  // {
+  //   pc: "https://content.cmervision.com//static/upload/other/20250808/1754622962158449.webp",
+  //   mobile:
+  //     "https://content.cmervision.com//static/upload/other/20250808/1754624918417613.avif",
+  //         newBanner: true,
+  // },
   {
-    pc: "https://content.cmervision.com//static/upload/image/20250120/1737338994793606.png",
+    pc: "https:///statichk.cmermedical.com/cmermedical/image/20260302/1737338994793606.webp",
     mobile:
-      "https://content.cmervision.com//static/upload/image/20250120/1737338997670285.png",
+      "https:///statichk.cmermedical.com/cmermedical/image/20260302/1737338997670285.webp",
      newBanner: true,
  },
 ];

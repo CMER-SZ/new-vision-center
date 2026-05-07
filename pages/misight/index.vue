@@ -26,19 +26,19 @@ const btnElement = ref({
 });
 
 
-const bannerImg = [
-  {
-    pc: "https://content.cmervision.com//static/upload/other/20250624/1750736344989348.webp",
-    mobile:
-      "https://content.cmervision.com//static/upload/other/20250624/1750736347433205.webp",
-    newBanner: true,
-  },
+const bannerImg = 
+  // {
+  //   pc: "https://content.cmervision.com//static/upload/other/20250624/1750736344989348.webp",
+  //   mobile:
+  //     "https://content.cmervision.com//static/upload/other/20250624/1750736347433205.webp",
+  //   newBanner: true,
+  // },
   {
     pc: "https://statichk.cmermedical.com/vision/imgs/a76ecb0090da4bd5.png",
     mobile: "https://statichk.cmermedical.com/vision/imgs/4a7dbdd10adfa764.png",
     newBanner: true,
-  },
-];
+  }
+// ];
 import getWindowSize from "@/utils/width";
 const isPc = ref(true);
 
@@ -99,7 +99,7 @@ const miSightQuestionList = [
         </div>
       </template>
     </PublicBanner> -->
-    <PageSwiperBanner :banner="bannerImg" class="banner" />
+    <PublicContainBanner :banner="bannerImg" class="banner" />
     <PublicNavbar
       :name="'兒童視力服務'"
       :isInsidePage="true"
@@ -202,7 +202,7 @@ const miSightQuestionList = [
             </div>
             <div>
               <img
-                src="https://statichk.cmermedical.com/vision/imgs/ce335dd66ca17bca.png"
+                src="https://statichk.cmermedical.com/cmermedical/image/20260122/10.webp"
                 alt=""
               />
             </div>

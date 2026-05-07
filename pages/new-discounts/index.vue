@@ -17,43 +17,140 @@ useHead(() => ({
   ],
 }));
 
-const bannerImg = [
-    {
-    pc: "https://content.cmervision.com//static/upload/other/20250731/1753941529390895.webp",
-    mobile:
-      "https://content.cmervision.com//static/upload/other/20250731/1753941529390895.webp",
-    newBanner: true,
-  },
- 
-   {
-    pc: "https://content.cmervision.com//static/upload/other/20250729/1753775892505247.avif",
-    mobile:
-      "https://content.cmervision.com//static/upload/other/20250729/1753775892505247.avif",
-    newBanner: true,
-  },
-   {
-    pc: "https://content.cmervision.com//static/upload/other/20250729/1753775933336147.avif",
-    mobile:"https://content.cmervision.com//static/upload/other/20250729/1753775933336147.avif",
-    newBanner: true,
-  },
+const bannerImg = 
+  [
+  // {
+  //    pc: "https://content.cmervision.com//static/upload/other/20250808/1754622962158449.webp",
+  //   mobile:
+  //     "https://content.cmervision.com//static/upload/other/20250808/1754622962158449.webp",
+  //   newBanner: true,
+  //      link:'',
+  //  },
+  //   {
+  //    pc: "https://content.cmervision.com/static/upload/other/20251117/1763340561538770.webp",
+  //   mobile:
+  //     "https://content.cmervision.com/static/upload/other/20251117/1763340575281198.webp",
+  //   newBanner: true,
+  //   link:'',
+  //  },
 
+  //   {
+  //   "pc": "https://content.cmervision.com//static/upload/other/20260113/1768283094237395.webp",
+  //   "mobile": "https://content.cmervision.com//static/upload/other/20260113/1768283133922698.webp",
+  //   "newBanner": true,
+  //   "link": "/dims-soft-lens"
+  // },
+  //    {
+  //   "pc": "https://content.cmervision.com//static/upload/other/20260113/1768283288426406.webp",
+  //   "mobile": "https://content.cmervision.com//static/upload/other/20260113/1768283297742226.webp",
+  //   "newBanner": true,
+  //   "link": "/dims-soft-lens"
+  // },
+  // {
+  //   "pc": "https://content.cmervision.com//static/upload/other/20260108/1767858429160094.webp",
+  //   "mobile": "https://content.cmervision.com//static/upload/other/20260108/1767858443974996.webp",
+  //   "newBanner": true,
+  //   "link": "/myopia-control-lenses/zeiss-myovision-pro"
+  // },
+  // {
+  //   "pc": "https://content.cmervision.com/static/upload/other/20250818/1755487598516086.avif",
+  //   "mobile": "https://content.cmervision.com/static/upload/other/20250818/1755486901936980.avif",
+  //   "newBanner": true,
+  //   "link": "/dims-soft-lens"
+  // },
+   /*{
+    "pc": "https://content.cmervision.com/static/upload/other/20260318/1773824852843203.webp",
+    "mobile": "https://content.cmervision.com/static/upload/other/20260318/1773824857397482.webp",
+    "newBanner": true,
+    "link": ""
+  },*/
   {
-    pc: "https://content.cmervision.com//static/upload/other/20250703/1751531508536033.webp",
-    mobile: "https://content.cmervision.com//static/upload/other/20250703/1751531508536033.webp",
-    newBanner: true,
+    "pc": "https://content.cmervision.com/static/upload/other/20250818/1755488417408460.avif",
+    "mobile": "https://content.cmervision.com/static/upload/other/20250818/1755488577240915.avif",
+    "newBanner": true,
+    "link": "/comprehensive/comprehensive-eye-examination/comprehensive-eye-examination-for-adult"
   },
+  // {
+  //   "pc": "https://content.cmervision.com/static/upload/other/20251117/1763340561538770.webp",
+  //   "mobile": "https://content.cmervision.com/static/upload/other/20251117/1763340575281198.webp",
+  //   "newBanner": true,
+  //   "link": ""
+  // },
+  {
+    "pc": "https://content.cmervision.com/static/upload/other/20250818/1755488719670535.avif",
+    "mobile": "https://content.cmervision.com/static/upload/image/20250224/1740390699424002.jpg",
+    "newBanner": true,
+    "link": "/myopia-control-lenses/zeiss-myovision-pro"
+  },
+  {
+    "pc": "https://content.cmervision.com/static/upload/other/20251112/1762908812202082.webp",
+    "mobile": "https://content.cmervision.com/static/upload/image/20241017/1729136367696551.png",
+    "newBanner": true,
+    "link": "/zve"
+  },
+  {
+    "pc": "https://content.cmervision.com/static/upload/other/20250228/1740704852410771.webp",
+    "mobile": "https://content.cmervision.com/static/upload/other/20250228/1740704885916525.webp",
+    "newBanner": true,
+    "link": "/progressive-lens"
+  },
+  {
+    "pc": "https://content.cmervision.com/static/upload/other/20251112/1762908852166069.webp",
+    "mobile": "https://content.cmervision.com/static/upload/image/20250213/1739435389470148.png",
+    "newBanner": true,
+    "link": "/zve"
+  },
+  {
+    "pc": "https://content.cmervision.com/static/upload/other/20250818/1755485902155245.avif",
+    "mobile": "https://content.cmervision.com/static/upload/other/20250818/1755486748874678.avif",
+    "newBanner": true,
+    "link": "/dims-soft-lens"
+  },
+  // {
+  //   "pc": "https://content.cmervision.com/static/upload/other/20251208/1765178588349370.webp",
+  //   "mobile": "https://content.cmervision.com/static/upload/other/20251208/1765178594744250.webp",
+  //   "newBanner": true,
+  //   "link": "/misight"
+  // },
+  //  {
+  //   "pc": "https://content.cmervision.com/static/upload/other/20260209/1770605353419562.webp",
+  //   "mobile": "https://content.cmervision.com/static/upload/other/20260209/1770605367316929.webp",
+  //   "newBanner": true,
+  //   "link": "/misight"
+  // }
+   
+  ]
+ 
+  //  {
+  //   pc: "https://content.cmervision.com//static/upload/other/20250729/1753775892505247.avif",
+  //   mobile:
+  //     "https://content.cmervision.com//static/upload/other/20250729/1753775892505247.avif",
+  //   newBanner: true,
+  // },
+  //  {
+  //   pc: "https://content.cmervision.com//static/upload/other/20250729/1753775933336147.avif",
+  //   mobile:"https://content.cmervision.com//static/upload/other/20250729/1753775933336147.avif",
+  //   newBanner: true,
+  // },
+
+  // {
+  //   pc: "https://content.cmervision.com//static/upload/other/20250703/1751531508536033.webp",
+  //   mobile: "https://content.cmervision.com//static/upload/other/20250703/1751531508536033.webp",
+  //   newBanner: true,
+  // },
  
   // {
   //   pc: "https://statichk.cmermedical.com/vision/imgs/5ae163616b5be08e.png",
   //   mobile: "https://statichk.cmermedical.com/vision/imgs/a946bc28a9b89d42.png",
   //   newBanner: true,
   // },
-];
+// ];
 </script>
 
 <template>
   <div class="video-information">
-    <PageSwiperBanner :banner="bannerImg" class="banner" />
+     <!-- <PublicContainBanner  :banner="bannerImg" /> -->
+    <PageSwiperBannerV2 :banner="bannerImg" class="banner" />
     <PublicNavbar :link="'/about-us/cmer-vision'" :name="'最新優惠'" />
     <div class="video-information-box">
       <NowDiscounts />
@@ -73,11 +170,11 @@ const bannerImg = [
   .video-information {
     :deep(.banner-template) {
       &>div:first-child {
-        height: 340px !important;
+        height: 500px !important;
 
         img {
           height: 100%;
-          object-fit: cover;
+          // object-fit: cover;
         }
       }
     }
@@ -116,7 +213,7 @@ const bannerImg = [
     :deep(.banner-swiper) {
       height: 45vw;
     }
-
+   
     :deep(.swiper) {
 
       .swiper-slide {
