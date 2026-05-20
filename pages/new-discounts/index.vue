@@ -17,6 +17,44 @@ useHead(() => ({
   ],
 }));
 
+interface discountBannerImg {
+  id: number;
+  gid: number;
+  pc: string;
+  mobile: string;
+  link: string;
+  title: string;
+  subtitle: string;
+}
+const discountBannerImg = ref<discountBannerImg[]>([]);
+// 获取数据
+const getData = async () => {
+  try {
+    const res = await fetch("https://content.cmervision.com/api.php/cms/slide/gid/2/num/30");
+    const data = await res.json();
+    if (data.code === 1) {
+      // data.data.sort((a: any, b: any) => a.id - b.id);
+      discountBannerImg.value = data.data.map((item: any) => {
+        return {
+          id: item.id,
+		  gid: item.gid,
+          pc: `https://content.cmervision.com${item.pic}`,
+          mobile: `https://content.cmervision.com${item.mobilepic}`,
+          link: `https://www.cmervision.com${item.link}`,
+          title: item.title,
+          subtitle: item.subtitle,
+        };
+      });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+onMounted(() => {
+  getData();
+});
+
 const bannerImg = 
   [
   // {
@@ -90,7 +128,7 @@ const bannerImg =
   },
   {
     "pc": "https://content.cmervision.com/static/upload/other/20250228/1740704852410771.webp",
-    "mobile": "https://content.cmervision.com/static/upload/other/20250228/1740704885916525.webp",
+    "mobile": "https://content.cmervision.com/static/upload/other/20250228/1740704885916525.webp"，
     "newBanner": true,
     "link": "/progressive-lens"
   },
@@ -150,7 +188,7 @@ const bannerImg =
 <template>
   <div class="video-information">
      <!-- <PublicContainBanner  :banner="bannerImg" /> -->
-    <PageSwiperBannerV2 :banner="bannerImg" class="banner" />
+    <PageSwiperBannerV2 :banner="discountBannerImg" class="banner" />
     <PublicNavbar :link="'/about-us/cmer-vision'" :name="'最新優惠'" />
     <div class="video-information-box">
       <NowDiscounts />
